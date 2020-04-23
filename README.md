@@ -1,6 +1,6 @@
 ## Udacity Machine Learning Engineer Nanodegree
 
-#### Folders:  
+#### Projects:  
 
 1. **Sentiment_Analysis**:  
 Deploy Recurrent Neural Network models using Amazon SageMaker.  
