@@ -88,7 +88,9 @@ def predict_fn(input_data, model):
     #       be a numpy array which contains a single integer which is either 1 or 0
 
     # result = np.round(model.predict(data)).astype('int')
-    output = model.predict(data).to('cpu')
+    with torch.no_grad():
+        output = model.forward(data)
+    output = output.to('cpu')
     result = np.round(output.numpy())
     result = int(result)
     
